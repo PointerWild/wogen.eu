@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53220/about/</loc>
+    <loc>http://localhost:54475/about/</loc>
   </url><url>
-    <loc>http://localhost:53220/categories/</loc>
+    <loc>http://localhost:54475/categories/</loc>
   </url><url>
-    <loc>http://localhost:53220/contact/</loc>
+    <loc>http://localhost:54475/contact/</loc>
   </url><url>
-    <loc>http://localhost:53220/tags/</loc>
+    <loc>http://localhost:54475/tags/</loc>
   </url><url>
-    <loc>http://localhost:53220/</loc>
+    <loc>http://localhost:54475/</loc>
   </url>
 </urlset>
