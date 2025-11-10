@@ -1,0 +1,69 @@
+baseURL = "https://www.wogen.eu/"
+title = "WOGEN"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+
+[params]
+  defaultTheme = "auto"
+  disableScrollToTop = false
+  ShowShareButtons = false
+  ShowReadingTime = false
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = true
+  description = "请联系我们"
+
+  # 首页名片模式
+  [params.profileMode]
+    enabled = true
+    title = "WOGEN"
+    subtitle = "我们能做很多事！！！！！"
+    imageUrl = "/logo.png"
+    imageTitle = "WOGEN"
+    # 这里直接给“发邮件 / 打电话”按钮
+    buttons = [
+      { name = "Email",   url = "mailto:info@wogen.eu" },
+      { name = "Call",    url = "tel:+49XXXXXXXXXX"    },
+      { name = "About",   url = "/about/"              },
+      { name = "Contact", url = "/contact/"            }
+    ]
+
+  # 头像下方的小图标
+  [[params.socialIcons]]
+    name = "email"
+    url  = "mailto:info@wogen.eu"
+  [[params.socialIcons]]
+    name = "phone"            # 注：若主题无电话图标，会显示通用链接图标，但链接可用
+    url  = "tel:+49 1744964585"
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/pointerwildroy"
+
+[menu]
+  # 这里我保留“Contact”，去掉重复项；如果“摄影/翻译”是单独页面，记得建对应内容页
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 20
+  
+  [[menu.main]]
+    name = "摄影"
+    url  = "/photo/"
+    weight = 30
+  [[menu.main]]
+    name = "翻译"
+    url  = "/translate/"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[pagination]
+  pagerSize = 10

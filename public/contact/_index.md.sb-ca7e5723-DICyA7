@@ -1,0 +1,51 @@
+---
+title: "Contact"
+summary: "联系信息"
+showtoc: false
+---
+
+**Email**： [info@wogen.eu](mailto:info@wogen.eu)  
+**Phone**： [+49 1744964585](tel:+491XXXXXXXX)  
+**Address**： Berlin, Germany
+
+---
+
+### 在线留言
+填写下表单，我们会在 1–2 个工作日内回复。
+
+<form action="https://formspree.io/f/xpwkzazj" method="POST">
+  <!-- 邮件主题（可改） -->
+  <input type="hidden" name="_subject" value="New message from wogen.eu">
+
+  <!-- 提交成功后跳转的感谢页（可选） -->
+  <input type="hidden" name="_next" value="https://www.wogen.eu/thanks/">
+
+  <!-- 反垃圾 honeypot（隐藏字段，别删除） -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <p>
+    <label>你的名字<br>
+      <input type="text" name="name" required>
+    </label>
+  </p>
+  <p>
+    <label>邮箱<br>
+      <input type="email" name="email" required>
+    </label>
+  </p>
+  <p>
+    <label>电话（可选）<br>
+      <input type="tel" name="phone" placeholder="+49 …">
+    </label>
+  </p>
+  <p>
+    <label>留言<br>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+  </p>
+
+  <!-- 收件箱里可直接点“回复到此邮箱” -->
+  <input type="hidden" name="_replyto" value="{{ .Params.email | default `info@wogen.eu` }}">
+
+  <p><button type="submit">发送</button></p>
+</form>

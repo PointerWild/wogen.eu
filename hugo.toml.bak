@@ -1,0 +1,50 @@
+baseURL = "https://www.wogen.eu/"
+title = "WOGEN"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+paginate = 10
+enableRobotsTXT = true
+
+[params]
+  defaultTheme = "auto"         # 自动深浅色
+  disableScrollToTop = false
+  ShowShareButtons = false
+  ShowReadingTime = false
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = true
+  description = "请联系我们"
+
+  # 开启首页 Profile 模式（很适合名片站）
+  [params.profileMode]
+    enabled = true
+    title = "WOGEN"
+    subtitle = "Consulenza che fa la differenza"
+    imageUrl = ""               # 可放 /logo.png（放到 static/logo.png）
+    imageTitle = "WOGEN"
+    buttons = [
+      { name = "About",   url = "/about/" },
+      { name = "Contact", url = "/contact/" }
+    ]
+
+  # 页脚社交（按需）
+  [[params.socialIcons]]
+    name = "email"
+    url  = "info@wogen.eu"
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/pointerwildroy"
+
+[menu]
+  [[menu.main]]
+    name = "摄影"
+    url  = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 20
+  [[menu.main]]
+    name = "翻译"
+    url  = "/contact/"
+    weight = 20
+

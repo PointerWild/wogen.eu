@@ -1,0 +1,41 @@
+/* 容器与排版 */
+.contact-wrap { max-width: 860px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+.contact-title { margin: 0 0 1rem; }
+.contact-lead { color: var(--secondary); margin-bottom: 1.5rem; }
+
+/* 信息卡片 */
+.contact-card {
+  background: var(--theme-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem 1.25rem; }
+.contact-label { color: var(--secondary); font-weight: 600; }
+.contact-value a { text-decoration: none; }
+@media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
+
+/* 表单 */
+.form-card {
+  background: var(--theme-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+.form-row { margin-bottom: .9rem; }
+.form-row label { display:block; font-weight:600; margin-bottom:.35rem; }
+.form-input, .form-textarea {
+  width: 100%; padding: .65rem .75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px; background: var(--entry);
+}
+.form-textarea { min-height: 140px; resize: vertical; }
+.form-actions { margin-top: .5rem; }
+.btn-primary {
+  display:inline-block; padding:.6rem 1.1rem; border-radius:10px;
+  background: var(--primary); color: var(--theme);
+  border:1px solid var(--primary); cursor:pointer;
+}
+.btn-primary:hover { filter: brightness(1.05); }
+.small-note { color: var(--secondary); font-size: .9rem; }
