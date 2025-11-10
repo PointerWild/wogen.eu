@@ -1,4 +1,4 @@
-baseURL = "https://www.wogen.eu/"
+baseURL = "https://wogen.eu/"
 title = "WOGEN"
 theme = "PaperMod"
 defaultContentLanguage = "en"
